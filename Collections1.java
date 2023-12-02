@@ -1,24 +1,24 @@
 import java.util.*;
 
-class Collections2
+class Collections1
 {
     public static void main(String arg[])
     {
-        LinkedList <String>lobj = new LinkedList<String>();
+        LinkedList <Integer>lobj = new LinkedList<Integer>();
 
-        lobj.add("Kapil");
-        lobj.add("Aditya");
-        lobj.add("Rohan");
-        lobj.add("Rutik");
-        lobj.add("Tejas");
+        lobj.add(11);
+        lobj.add(21);
+        lobj.add(51);
+        lobj.add(101);
+        lobj.add(111);
 
         System.out.println("Elements of Linked list are : "+lobj);
 
-        lobj.addFirst("Pooja");
+        lobj.addFirst(1);
         
         System.out.println("Elements of Linked list are : "+lobj);
 
-        lobj.addLast("Sneha");
+        lobj.addLast(121);
         
         System.out.println("Elements of Linked list are : "+lobj);
 
@@ -29,13 +29,13 @@ class Collections2
             System.out.println(iobj.next());
         } 
 
-        if(lobj.contains("Rohan"))
+        if(lobj.contains(121))
         {
-            System.out.println("Rohan is present in LL");
+            System.out.println("121 is present in LL");
         }
         else
         {
-             System.out.println("Rohan is not present in LL");   
+             System.out.println("121 is not present in LL");   
         }
         
         lobj.remove();
@@ -52,7 +52,7 @@ class Collections2
 
         System.out.println("Number of elements are : "+lobj.size());
 
-        lobj.set(1,"Dipak");
+        lobj.set(1,500);
         System.out.println("Elements of Linked list are : "+lobj);
 
 
