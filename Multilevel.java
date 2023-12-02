@@ -1,0 +1,53 @@
+
+class Base
+{
+    public int A,B;
+
+    public Base()
+    {
+        System.out.println("Base Constructor");
+    }
+
+    public void Fun()
+    {
+        System.out.println("Base Fun");
+    }
+}
+
+class Derieved extends Base
+{
+    public int X,Y;
+
+    public Derieved()
+    {
+        System.out.println("Derived Constructor");
+    }
+
+    public void Gun()
+    {
+        System.out.println("Derievd Gun");
+    }
+}
+
+class DerievedX extends Derieved
+{
+    public int P,Q;
+    
+    public DerievedX()
+    {
+        System.out.println("DerivedX Constructor");
+    }
+}
+
+class Multilevel
+{
+    public static void main(String arg[])
+    {
+        System.out.println("");
+
+       DerievedX dobj = new DerievedX();
+        dobj.Fun();
+        dobj.Gun();
+
+    }
+}
